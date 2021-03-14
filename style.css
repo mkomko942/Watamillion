@@ -25,6 +25,16 @@ body {
     font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--text-color);
+}
+
 /* utility classes */
 
 .right {
@@ -95,7 +105,7 @@ section {
     max-width: 900px;
     justify-content: center;
     align-content: center;
-    margin: 40px auto 0 auto;
+    margin: 60px auto 0 auto;
 }
 
 section h2 {
@@ -140,6 +150,43 @@ span {
     max-width: 700px;
 }
 
+/* card elements */
+
+.card-container {
+    display: flex;
+    height: 20vw;
+    max-height: 225px;
+}
+
+.song-card {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    max-height: 225px;
+}
+
+.song-card video {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.song-cover {
+    opacity: 1;
+    object-fit: cover;
+    transition-duration: 750ms;
+}
+
+.song-teaser {
+    object-fit: cover;
+    z-index: -1;
+}
+
+.song-card:hover .song-cover {
+    opacity: 0;
+}
+
 /* footer properties */
 
 footer {
@@ -147,4 +194,14 @@ footer {
     height: 15vh;
     background-color: var(--deep-bg-color);
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-icon {
+    
 }
