@@ -29,10 +29,10 @@ body {
 	width: 8px;
 }
 ::-webkit-scrollbar-track {
-	background: var(--background-color);
+	background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-	background: var(--text-color);
+	background: #000000;
 }
 
 /* utility classes */
@@ -203,5 +203,5 @@ footer a {
 }
 
 .footer-icon {
-    
+
 }
