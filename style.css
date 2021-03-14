@@ -16,8 +16,14 @@
     --header-bg-color: #f7f8ce;
     --main-bg-color: #ffffff;
     --deep-bg-color: #f0ff90;
+    --red: #fa3a3a;
+    --orange: #fa873a;
+    --yellow: #faed3a;
+    --green: #4afa3a;
+    --blue: #3ad4fa;
     --pink: #ef00b5;
     --purple: #4c2dcc;
+    --gray: #242323;
 }
 
 body {
@@ -51,6 +57,15 @@ body {
     align-self: flex-start;
 }
 
+.center-items {
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
 .text-center {
     text-align: center;
 }
@@ -76,7 +91,7 @@ body {
 }
 
 .margin-top {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .margin-left {
@@ -85,6 +100,15 @@ body {
 
 .margin-right {
     margin-right: 25px;
+}
+
+.dark {
+    background-color: var(--gray);
+    color: #ffffff;
+}
+
+.padding-vertical {
+    padding: 30px 0;
 }
 
 /* header properties */
@@ -121,7 +145,7 @@ header a:hover {
 .hero {
     margin: auto;
     width: 100%;
-    max-height: 85vh;
+    /* max-height: 85vh; */
 }
 
 #discography-hero {
@@ -129,6 +153,17 @@ header a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    background-attachment: fixed;
+    height: 85vh;
+    position: relative;
+}
+
+#watapedia-hero {
+    background-image: url("assets/watapedia-hero.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
     height: 85vh;
     position: relative;
 }
@@ -163,7 +198,7 @@ section {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 60px auto 0 auto;
+    margin: auto;
 }
 
 .narrow { 
@@ -187,12 +222,12 @@ section p {
 
 .banner-img {
     width: 100%;
+    display: block;
 }
 
 .heading-banner {
     height: 200px;
     width: 100%;
-    background-color: #242323;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,13 +242,14 @@ section p {
     height: 75vh;
 }
 
-.tall .text-box {
-    margin: 40px auto;
-}
 
 .tall h1 {
     font-family: Lato, sans-serif;
     font-style: italic;
+}
+
+.tall:nth-child(even) {
+    justify-content: flex-end;
 }
 
 .split-img {
@@ -229,6 +265,26 @@ section p {
 
 .purple {
     color: var(--purple);
+}
+
+.red {
+    color: var(--red);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.green {
+    color: var(--green);
+}
+
+.blue {
+    color: var(--blue);
 }
 
 .subtitle {
@@ -251,22 +307,57 @@ section p {
     max-width: 700px;
 }
 
+.songs-list {
+    padding-bottom: 60px;
+}
+
+.song-item {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.song-item img {
+    height: 100%;
+}
+
+.song-item h3 {
+    color: var(--deep-bg-color);
+}
+
+.divider {
+    width: 100%;
+}
+
 /* card elements */
 
 .card-container {
     display: flex;
-    height: 20vw;
-    max-height: 225px;
+    flex-wrap: wrap;
 }
 
 .song-card {
     position: relative;
-    width: 25%;
-    height: 100%;
+    width: 20vw;
+    min-width: 150px;
+    max-width: 225px;
+    height: 20vw;
+    min-height: 150px;
     max-height: 225px;
 }
 
 .song-card video {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.song-card img {
     position: absolute;
     left: 0;
     height: 100%;
@@ -291,7 +382,6 @@ section p {
 /* footer properties */
 
 footer {
-    margin-top: 40px;
     height: 15vh;
     background-color: var(--deep-bg-color);
     display: flex;

@@ -4,3 +4,5 @@
 - get a better footer design
 - possibly make the hero banner full bleed
 - add media query screen breaks
+- setup flask server
+- move to jinja2 templating
