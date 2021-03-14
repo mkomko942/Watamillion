@@ -22,7 +22,7 @@ body {
     font-family: FuturaLT-Light, sans-serif;
     font-weight: 100;
     background-color: var(--main-bg-color);
-    font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /* utility classes */
@@ -82,13 +82,11 @@ header a:hover {
 
 /* main content properties */
 
-.hero {
-    height: 85vh;
-    background-image: url(assets/watame-hero.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: var(--deep-bg-color);
+.hero-video {
+    margin: auto;
+    width: 100%;
+    object-fit: contain;
+    max-height: 85vh;
 }
 
 section {
