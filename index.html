@@ -6,11 +6,16 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Tsunomaki Pasture</title>
 	<!-- stylesheets -->
-	<link href="normalize.css" rel="stylesheet" type="text/css" />
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 	<!-- header -->
 	<header>
 		<a href="index.html">Home</a>
@@ -27,17 +32,19 @@
 		</video>
 
 		<!-- content -->
-		<section class="column margin-top narrow">
-			<h2>Konban-do-do-do!</h2>
-			<div class="text-box left">
-				<p>A warm welcome from Watamates, around the world! Dedicated fans created this site in appreciation for the beloved
-					singing sheep, Tsunomaki Watame. We invite you to learn more about what makes Watame an incredible idol. Just one thing
-					to remember...</p>
-			</div>
-			<img class="medium-picture right" src="assets/watame-wink.gif">
-            <span class="subtitle right">...Watame did nothing wrong!</span>
-		</section>
-        <section class="column margin-top narrow">
+        <div class="bg-gray padding-vertical">
+            <section class="column narrow">
+                <h2>Konban-do-do-do!</h2>
+                <div class="text-box left">
+                    <p>A warm welcome from Watamates, around the world! Dedicated fans created this site in appreciation for the beloved
+                        singing sheep, Tsunomaki Watame. We invite you to learn more about what makes Watame an incredible idol. Just one thing
+                        to remember...</p>
+                </div>
+                <img class="medium-picture right" src="assets/watame-wink.gif">
+                <span class="subtitle right">...Watame did nothing wrong!</span>
+            </section>
+        </div>
+        <section class="column narrow padding-vertical">
             <h2>Who is Tsunomaki Watame ?</h2>
             <div class="flex row">
                 <div class="text-box text-right column">
@@ -49,20 +56,22 @@
                 </video>
             </div>
         </section>
-        <section class="column margin-top narrow">
-            <h2 class="right">Singing Sheep</h2>
-            <div class="flex row">
-                <video class="medium-picture margin-right" autoplay loop muted>
-                    <source src="assets/watame-seno.mp4" type="video/mp4" />
-                </video>
-                <div class="text-box column">
-                    <p> Watame's primary field of operation is music, whether it be originals, covers or her many weekly music streams.</p>
-                    <p>She sets goals to produce more original songs, her own original album and aiming for a solo live concert. She fully intends to do this while continuing to stream content, truly a determined Sheep.</p>
+        <div class="bg-gray padding-vertical">
+            <section class="column narrow">
+                <h2 class="right">Singing Sheep</h2>
+                <div class="flex row">
+                    <video class="medium-picture margin-right" autoplay loop muted>
+                        <source src="assets/watame-seno.mp4" type="video/mp4" />
+                    </video>
+                    <div class="text-box column">
+                        <p> Watame's primary field of operation is music, whether it be originals, covers or her many weekly music streams.</p>
+                        <p>She sets goals to produce more original songs, her own original album and aiming for a solo live concert. She fully intends to do this while continuing to stream content, truly a determined Sheep.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section class="column margin-top narrow">
+        <section class="column padding-vertical narrow">
             <h2>Watame's Songs</h2>
             <div class="card-container row">
                     <a class="song-card" href="https://youtu.be/P8OjkcLzYCM" target="_blank">
@@ -105,22 +114,23 @@
                 </a>
         </section>
 
-
-        <section class="column margin-top narrow">
-            <div class="flex row">
-                <div class="text-box text-right column">
-                    <h2>Chatting Sheep</h2>
-                    <p>Grab a drink, some Watachips and a comfy seat, it's chat time with our favorite Sheep!</p>
-                    <p>Watame loves her sheeps, which explains her signature long chat streams. It is normal to wish Watame good night only to wake up seeing her still reading Superchats like it's nothing.</p>
+        <div class="bg-gray">
+            <section class="column padding-vertical narrow">
+                <div class="flex row">
+                    <div class="text-box text-right column">
+                        <h2>Chatting Sheep</h2>
+                        <p>Grab a drink, some Watachips and a comfy seat, it's chat time with our favorite Sheep!</p>
+                        <p>Watame loves her sheeps, which explains her signature long chat streams. It is normal to wish Watame good night only to wake up seeing her still reading Superchats like it's nothing.</p>
+                    </div>
+                    <video class="small-picture margin-left" autoplay loop muted>
+                        <source src="assets/watame-chat.mp4" type="video/mp4" />
+                    </video>
                 </div>
-                <video class="small-picture margin-left" autoplay loop muted>
-                    <source src="assets/watame-chat.mp4" type="video/mp4" />
-                </video>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section class="column margin-top dark">
-            <div class="flex row narrow margin-auto padding-vertical">
+        <section class="column padding-vertical dark">
+            <div class="flex row narrow margin-auto">
                 <video class="medium-picture margin-right" autoplay loop muted>
                     <source src="assets/watame-gaming.mp4" type="video/mp4" />
                 </video>
@@ -138,6 +148,7 @@
     <!-- footer -->
     <footer>
         <h2>Tsunomaki Pasture</h2>
+        <p><span class="pink">©2021 by Watame Kojo</span></p>
         <div class="icon-container">
             <a href="https://twitter.com/tsunomakiwatame">
                 <img src="assets/social-icons/twitter-icon.png">
