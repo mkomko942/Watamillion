@@ -10,24 +10,36 @@
 	<link href="css/normalize.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
+	<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 </head>
 
 <body>
 	<script src="js/wow.min.js">
+
 	</script>
 	<script src="js/jquery-3.6.0.min.js">
+
 	</script>
 	<script>
 		new WOW().init()
 	</script>
 	<!-- header -->
-	<header>
-		<a href="index.html">Home</a>
-		<a href="discography.html">Discography</a>
-		<a href="watapedia.html">Watapedia</a>
-		<a href="road.html">Road to Watamillon</a>
-		<a href="contact.html">Contact</a>
+	<header class="padding-vertical">
+		<a href="index.html">
+			<div class="link-text">Home</div>
+		</a>
+		<a href="discography.html">
+			<div class="link-text">Discography</div>
+		</a>
+		<a href="watapedia.html">
+			<div class="link-text">Watapedia</div>
+		</a>
+		<a href="road.html">
+			<div class="link-text">Road to Watamillon</div>
+		</a>
+		<a href="contact.html">
+			<div class="link-text">Contact</div>
+		</a>
 	</header>
 
 	<main>
@@ -43,22 +55,22 @@
 
         <div class="tall flex row">
             <video class="split-img margin-right" autoplay loop muted>
-                <source src="assets/covers/Ai-mai.mp4" type="video/mp4" />
+                <source src="assets/covers/ai-mai.mp4" type="video/mp4" />
             </video>
-            <div class="text-box margin-right wow animate__fadeInRight" data-wow-duration="0.5s">
+            <div class="text-box margin-right wow animate__fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.3s">
                 <h1><span class="purple title-big">FIRST<br/>ORIGINAL</span></h1>
                 <h2>Ai Mai Chocolate</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
         </div>
         <div class="tall flex row">
-            <div class="text-box text-right margin-left wow animate__fadeInLeft" data-wow-duration="0.5s">
+            <div class="text-box text-right margin-left wow animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.3s">
                 <h1><span class="purple title-big">SECOND<br/>ORIGINAL</span></h1>
                 <h2>Can you do the Hololive?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
             <video class="split-img margin-left" autoplay loop muted>
-                <source src="assets/covers/Do-the-hololive.mp4" type="video/mp4" />
+                <source src="assets/covers/do-the-hololive.mp4" type="video/mp4" />
             </video>
         </div>
         <div class="dark position-relative padding-bottom">
@@ -66,7 +78,7 @@
                 <video class="split-img margin-right" autoplay loop muted>
                     <source src="assets/covers/cloudy.mp4" type="video/mp4" />
                 </video>
-                <div class="text-box margin-right wow animate__fadeInRight" data-wow-duration="0.5s">
+                <div class="text-box margin-right wow animate__fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.3s">
                     <h1><span class="pink title-big">THIRD<br/>ORIGINAL</span></h1>
                     <h2>Cloudy Sheep</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -78,17 +90,26 @@
         <div class="heading-banner dark">
             <h2>Cover Songs</h2>
         </div>
-        <section class="songs-list dark">
+        <section class="songs-list dark position-relative">
             <div class="narrow">
                 <div class="song-item">
                     <div class="text-box margin-left">
+                        <h3>Melancholic-wataAme remix- / メランコリック-wataAme remix-​</h3>
+                        <p>Mar 3, 2020</p>
+                    </div>
+                    <img class="margin-left" src="assets/cover-images/melancholic.jpg">
+                </div>
+                <div class="song-item">
+                    <div class="text-box margin-left">
                         <h3>Bubble Love / バブルラブ</h3>
+                        <p>Apr 26, 2020</p>
                     </div>
                     <img class="margin-left" src="assets/cover-images/bubblelove.jpg">
                 </div>
                 <div class="song-item">
                     <div class="text-box margin-left">
                         <h3>Chocolate Box (w/ Kanata)</h3>
+                        <p>Sep 6, 2020</p>
                         <p>Collaboration with Kanata</p>
                     </div>
                     <img class="margin-left" src="assets/cover-images/chocolate-box.jpg">
@@ -96,27 +117,64 @@
                 <div class="song-item">
                     <div class="text-box margin-left">
                         <h3>Halloween Until Morning / 朝までハロウィン (w/ Fubuki and Flare)</h3>
+                        <p>Nov 2, 2020</p>
                         <p>Collaboration with Fubuki and Flare</p>
                     </div>
                     <img class="margin-left" src="assets/cover-images/halloween.jpg">
                 </div>
                 <div class="song-item">
                     <div class="text-box margin-left">
-                        <h3>Melancholic-wataAme remix- / メランコリック-wataAme remix-​</h3>
-                    </div>
-                    <img class="margin-left" src="assets/cover-images/melancholic.jpg">
-                </div>
-                <div class="song-item">
-                    <div class="text-box margin-left">
                         <h3>Renai Circulation / 恋愛サーキュレーション</h3>
+                        <p>Dec 8, 2020</p>
                     </div>
                     <img class="margin-left" src="assets/cover-images/renai.jpg">
                 </div>
                 <div class="song-item">
                     <div class="text-box margin-left">
                         <h3>King​</h3>
+                        <p>Feb 13, 2021</p>
                     </div>
                     <img class="margin-left" src="assets/cover-images/king.jpg">
+                </div>
+            </div>
+            <img class="divider" src="assets/divider.webp">
+        </section>
+        <div class="align-bottom heading-banner">
+            <h2>Singing Streams</h2>
+        </div>
+        <section class="column text-center">
+            <div class="flex narrow margin-auto justify-even padding-vertical">
+                <div class="menu-card flex column">
+                    <div class="position-relative">
+                        <img src="assets/WNF.webp">
+                        <button>WNF Library</button>
+                    </div>
+                    <div class="text-box">
+                        <h3>Watame Night Fever</h3>
+                        <p>Are you ready to dance?</p>
+                    </div>
+                </div>
+                <div class="menu-card flex column">
+                    <div class="position-relative">
+                        <video autoplay loop muted>
+                            <source src="assets/covers/sleepy.mp4" type="video/mp4" />
+                        </video>
+                        <button>WnU Library</button>
+                    </div>
+                    <div class="text-box">
+                        <h3>Watame no Uta</h3>
+                        <p>Have a little fun singing mixed with some Tsunomaki jankenpon</p>
+                    </div>
+                </div>
+                <div class="menu-card flex column">
+                    <div class="position-relative">
+                        <img src="assets/events.webp">
+                        <button>Special Events Library</button>
+                    </div>
+                    <div class="text-box">
+                        <h3>Special Events</h3>
+                        <p>Marathon streams, 3D Live</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -124,15 +182,31 @@
     </main>
 
     <!-- footer -->
-    <footer>
-        <h2>Tsunomaki Pasture</h2>
-        <div class="icon-container">
-            <a href="https://twitter.com/tsunomakiwatame">
-                <img src="assets/social-icons/twitter-icon.png">
-            </a>
-            <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA">
-                <img src="assets/social-icons/youtube-icon.png">
-            </a>
+    <footer class="column">
+        <h2 class="text-center">Tsunomaki Pasture</h2>
+        <div class="flex">
+            <div class="flex center-items column footer-section padding-vertical">
+                <div class="link-container flex column">
+                    <p class="footer-subheading">Explore</p>
+                    <a href="index.html">Home</a>
+                    <a href="discography.html">Discography</a>
+                    <a href="watapedia.html">Watapedia</a>
+                    <a href="road.html">Road to Watamillon</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p><span class="pink">©2021 by Watame Kojo</span></p>
+            </div>
+            <div class="flex center-items column footer-section padding-vertical">
+                <p class="footer-subheading">Socials</p>
+                <div class="icon-container">
+                    <a href="https://twitter.com/tsunomakiwatame">
+                        <img src="assets/social-icons/twitter-icon.png">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA">
+                        <img src="assets/social-icons/youtube-icon.png">
+                    </a>
+                </div>
+            </div>              
         </div>
     </footer>
 </body>

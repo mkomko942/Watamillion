@@ -13,12 +13,22 @@
 
 <body>
   <!-- header -->
-	<header>
-		<a href="index.html">Home</a>
-		<a href="discography.html">Discography</a>
-		<a href="watapedia.html">Watapedia</a>
-		<a href="road.html">Road to Watamillon</a>
-		<a href="contact.html">Contact</a>
+	<header class="padding-vertical">
+		<a href="index.html">
+            <div class="link-text">Home</div>
+        </a>
+		<a href="discography.html">
+            <div class="link-text">Discography</div>
+        </a>
+		<a href="watapedia.html">
+            <div class="link-text">Watapedia</div>
+        </a>
+		<a href="road.html">
+            <div class="link-text">Road to Watamillon</div>
+        </a>
+		<a href="contact.html">
+            <div class="link-text">Contact</div>
+        </a>
 	</header>
 
     <main>
@@ -43,15 +53,31 @@
     </main>
 
     <!-- footer -->
-    <footer>
-        <h2>Tsunomaki Pasture</h2>
-        <div class="icon-container">
-            <a href="https://twitter.com/tsunomakiwatame">
-                <img src="assets/social-icons/twitter-icon.png">
-            </a>
-            <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA">
-                <img src="assets/social-icons/youtube-icon.png">
-            </a>
+    <footer class="column">
+        <h2 class="text-center">Tsunomaki Pasture</h2>
+        <div class="flex">
+            <div class="flex center-items column footer-section padding-vertical">
+                <div class="link-container flex column">
+                    <p class="footer-subheading">Explore</p>
+                    <a href="index.html">Home</a>
+                    <a href="discography.html">Discography</a>
+                    <a href="watapedia.html">Watapedia</a>
+                    <a href="road.html">Road to Watamillon</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p><span class="pink">©2021 by Watame Kojo</span></p>
+            </div>
+            <div class="flex center-items column footer-section padding-vertical">
+                <p class="footer-subheading">Socials</p>
+                <div class="icon-container">
+                    <a href="https://twitter.com/tsunomakiwatame">
+                        <img src="assets/social-icons/twitter-icon.png">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA">
+                        <img src="assets/social-icons/youtube-icon.png">
+                    </a>
+                </div>
+            </div>              
         </div>
     </footer>
 </body>

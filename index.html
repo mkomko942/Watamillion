@@ -9,20 +9,35 @@
 	<link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 </head>
 
 <body>
-    <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+    <script src="js/wow.min.js">
+	</script>
+	<script src="js/jquery-3.6.0.min.js">
+	</script>
+	<script>
+		new WOW().init()
+	</script>
 	<!-- header -->
-	<header>
-		<a href="index.html">Home</a>
-		<a href="discography.html">Discography</a>
-		<a href="watapedia.html">Watapedia</a>
-		<a href="road.html">Road to Watamillon</a>
-		<a href="contact.html">Contact</a>
+	<header class="padding-vertical">
+        <img class="tiny-picture" src="assets/watame-icon.webp">
+		<a href="index.html">
+            <div class="link-text">Home</div>
+        </a>
+		<a href="discography.html">
+            <div class="link-text">Discography</div>
+        </a>
+		<a href="watapedia.html">
+            <div class="link-text">Watapedia</div>
+        </a>
+		<a href="road.html">
+            <div class="link-text">Road to Watamillon</div>
+        </a>
+		<a href="contact.html">
+            <div class="link-text">Contact</div>
+        </a>
 	</header>
 
 	<main>
@@ -74,42 +89,52 @@
         <section class="column padding-vertical narrow">
             <h2>Watame's Songs</h2>
             <div class="card-container row">
-                    <a class="song-card" href="https://youtu.be/P8OjkcLzYCM" target="_blank">
+                    <a class="song-card wow animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.15s" href="https://youtu.be/P8OjkcLzYCM" target="_blank">
                         <video class="song-cover" autoplay loop muted>
-                            <source src="assets/covers/Ai-mai-cover.mp4" type="video/mp4" />
+                            <source src="assets/covers/ai-mai-cover.mp4" type="video/mp4" />
                         </video>
                         <video class="song-teaser" autoplay loop muted>
-                            <source src="assets/covers/Ai-mai.mp4" type="video/mp4" />
+                            <source src="assets/covers/ai-mai.mp4" type="video/mp4" />
                         </video>
                     </a>
-                <a class="song-card" href="https://youtu.be/lxx_nwm_8PU" target="_blank">
+                <a class="song-card wow animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s" href="https://youtu.be/lxx_nwm_8PU" target="_blank">
                     <video class="song-cover" autoplay loop muted>
-                        <source src="assets/covers/Sleepy-cover.mp4" type="video/mp4" />
+                        <source src="assets/covers/sleepy-cover.mp4" type="video/mp4" />
                     </video>
                     <video class="song-teaser" autoplay loop muted>
-                        <source src="assets/covers/Sleepy.mp4" type="video/mp4" />
+                        <source src="assets/covers/sleepy.mp4" type="video/mp4" />
                     </video>
                 </a>
-                <a class="song-card" href="https://youtu.be/q4O-JlmrdQA" target="_blank">
+                <a class="song-card wow animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.45s" href="https://youtu.be/q4O-JlmrdQA" target="_blank">
                     <video class="song-cover" autoplay loop muted>
-                        <source src="assets/covers/Do-the-hololive-cover.mp4" type="video/mp4" />
+                        <source src="assets/covers/do-the-hololive-cover.mp4" type="video/mp4" />
                     </video>
                     <video class="song-teaser" autoplay loop muted>
-                        <source src="assets/covers/Do-the-hololive.mp4" type="video/mp4" />
+                        <source src="assets/covers/do-the-hololive.mp4" type="video/mp4" />
                     </video>
                 </a>
-                <a class="song-card" href="https://youtu.be/2I3oQIF6UaU" target="_blank">
+                <a class="song-card wow animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s" href="https://youtu.be/2I3oQIF6UaU" target="_blank">
                     <video class="song-cover" autoplay loop muted>
-                        <source src="assets/covers/Bubble-cover.mp4" type="video/mp4" />
+                        <source src="assets/covers/bubble-cover.mp4" type="video/mp4" />
                     </video>
                     <video class="song-teaser" autoplay loop muted>
-                        <source src="assets/covers/Bubble.mp4" type="video/mp4" />
+                        <source src="assets/covers/bubble.mp4" type="video/mp4" />
                     </video>
                 </a>
-                <a class="song-card" href="https://youtu.be/DGun2cWbPEM" target="_blank">
-                    <img class="song-cover" src="assets/covers/cloudy-cover.gif">
+                <a class="song-card wow animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.15s" href="https://youtu.be/DGun2cWbPEM" target="_blank">
+                    <video class="song-cover" autoplay loop muted>
+                        <source src="assets/covers/cloudy-cover.mp4" type="video/mp4" />
+                    </video>
                     <video class="song-teaser" autoplay loop muted>
                         <source src="assets/covers/cloudy.mp4" type="video/mp4" />
+                    </video>
+                </a>
+                <a class="song-card wow animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s" href="https://youtu.be/OR1Epbc_NNE" target="_blank">
+                <video class="song-cover" autoplay loop muted>
+                        <source src="assets/covers/king-cover.mp4" type="video/mp4" />
+                    </video>
+                    <video class="song-teaser" autoplay loop muted>
+                        <source src="assets/covers/king.mp4" type="video/mp4" />
                     </video>
                 </a>
         </section>
@@ -117,10 +142,10 @@
         <div class="bg-gray">
             <section class="column padding-vertical narrow">
                 <div class="flex row">
-                    <div class="text-box text-right column">
+                    <div class="text-box text-left column">
                         <h2>Chatting Sheep</h2>
                         <p>Grab a drink, some Watachips and a comfy seat, it's chat time with our favorite Sheep!</p>
-                        <p>Watame loves her sheeps, which explains her signature long chat streams. It is normal to wish Watame good night only to wake up seeing her still reading Superchats like it's nothing.</p>
+                        <p>Watame loves her sheeps, which explains her signature long chat streams. It's normal to wish Watame good night only to wake up seeing her still reading Superchats like it's nothing.</p>
                     </div>
                     <video class="small-picture margin-left" autoplay loop muted>
                         <source src="assets/watame-chat.mp4" type="video/mp4" />
@@ -138,24 +163,49 @@
                     <h2>
                         <span class="red">G</span><span class="orange">a</span><span class="yellow">m</span><span class="green">i</span><span class="blue">n</span><span class="purple">g_</span><span class="pink">Sheep</span>
                     </h2>
-                    <p>Cozy Minecraft stream, racing with fans in Mario Kart, bone-chilling horror games?</p>
-                    <img class="small-picture" src="assets/rgb-sheep.gif">
+                    <p>While Watame is not your standard FaZe pro gamer, she can make it up and more with her cozy Minecraft streams, hilarious Smash Bros practice sessions and fun Mario Kart races with her fans.</p>
+                    <div class="sheep-container center-items flex wrap">
+                        <img src="assets/rgb-sheep.gif">
+                        <img src="assets/rgb-sheep.gif">
+                        <img src="assets/rgb-sheep.gif">
+                        <img src="assets/rgb-sheep.gif">
+                        <img src="assets/rgb-sheep.gif">
+                        <img src="assets/rgb-sheep.gif">
+                    </div>
                 </div>
             </div>
         </section>
 	</main>
 
     <!-- footer -->
-    <footer>
-        <h2>Tsunomaki Pasture</h2>
-        <p><span class="pink">©2021 by Watame Kojo</span></p>
-        <div class="icon-container">
-            <a href="https://twitter.com/tsunomakiwatame">
-                <img src="assets/social-icons/twitter-icon.png">
-            </a>
-            <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA">
-                <img src="assets/social-icons/youtube-icon.png">
-            </a>
+    <footer class="column">
+        <h2 class="text-center">Tsunomaki Pasture</h2>
+        <div class="flex">
+            <div class="flex center-items column footer-section padding-vertical">
+                <div class="link-container flex column">
+                    <p class="footer-subheading">Explore</p>
+                    <a href="index.html">Home</a>
+                    <a href="discography.html">Discography</a>
+                    <a href="watapedia.html">Watapedia</a>
+                    <a href="road.html">Road to Watamillon</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p><span class="pink">©2021 by Watame Kojo</span></p>
+            </div>
+            <div class="flex center-items column footer-section padding-vertical">
+                <p class="footer-subheading">Socials</p>
+                <div class="icon-container">
+                    <a href="https://twitter.com/tsunomakiwatame">
+                        <img class= "footer-icon" src="assets/social-icons/twitter.png">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA">
+                        <img class= "footer-icon" src="assets/social-icons/youtube.png">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA">
+                        <img class= "footer-icon" src="assets/social-icons/hololive.png">
+                    </a>
+                </div>
+            </div>              
         </div>
     </footer>
 
